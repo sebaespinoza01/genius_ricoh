@@ -1,0 +1,93 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    margin-bottom: 20px;
+}
+
+.welcome-section img {
+    max-width: 100px;
+    margin-bottom: 10px; /* Añade un margen inferior para separar la imagen del texto */
+}
+
+.welcome-text {
+    text-align: center;
+}
+
+.welcome-text h1 {
+    margin: 0; /* Elimina el margen superior del mensaje de bienvenida */
+}
+
+.welcome-text p {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+
+.welcome-section img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+/* imagen dentro de la card */
+
+.card img {
+    max-width: 50px; /* Ajusta el tamaño máximo de la imagen pequeña */
+    margin-right: 10px; /* Añade un margen derecho para separar la imagen del contenido de la card */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .welcome-section {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        text-align: center;
+    }
+
+    .welcome-section img {
+        margin-right: 0; /* Elimina el margen derecho de la imagen en dispositivos más pequeños */
+        margin-bottom: 10px; /* Añade un margen inferior a la imagen */
+    }
+}
